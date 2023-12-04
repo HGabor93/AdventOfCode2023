@@ -15,7 +15,7 @@ namespace AdventOfCode2023
             string filePath = @"C:\Development\AdventOfCode2023\AdventOfCode2023\Days\Tasks";
             //System.Console.ReadKey();
             string currentDay = "2";
-            string part = "1";
+            string part = "2";
 
             //string[] fileContent = FileReader.ReadFileArray(filePath, currentDay, part);
             List<string> fileContentList = FileReader.ReadFileList(filePath, currentDay);
@@ -50,7 +50,7 @@ namespace AdventOfCode2023
                     else
                     {
                         //Day2 Part2
-                        //Console.WriteLine(Day2.PartTwo(FileReader.ReadFileArray(filePath, currentDay, part)));
+                        Console.WriteLine(Day2.PartTwo(FileReader.ReadFileList(filePath, currentDay)));
                     }
                     break;
             }
