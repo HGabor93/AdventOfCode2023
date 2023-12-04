@@ -93,7 +93,7 @@ namespace AdventOfCode2023.Days.Solutions
             const int greenCubesMax = 13;
             const int blueCubesMax = 14;
 
-            if (redCubes < redCubesMax && greenCubes < greenCubesMax && blueCubes < blueCubesMax)
+            if (redCubes <= redCubesMax && greenCubes <= greenCubesMax && blueCubes <= blueCubesMax)
             {
                 return true;
             }
