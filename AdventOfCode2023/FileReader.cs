@@ -11,7 +11,8 @@ namespace AdventOfCode2023
 
         public static List<string> ReadFileList(string filePath, string day)
         {
-            string fullFilePath = filePath + @"\day" + day + "_g.txt";
+            string fullFilePath = filePath + @"\day" + day + ".txt";
+            //string fullFilePath = filePath + @"\day" + day + "_g.txt";
 
             // Read each line of the file into a string array. Each element
             // of the array is one line of the file.        
