@@ -1,5 +1,4 @@
 ﻿using AdventOfCode2023.Days.Solutions;
-using AdventOfCode2023;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,8 +13,8 @@ namespace AdventOfCode2023
         {
             string filePath = @"C:\Development\AdventOfCode2023\AdventOfCode2023\Days\Tasks";
             //System.Console.ReadKey();
-            string currentDay = "6";
-            string part = "2";
+            string currentDay = "1";
+            string part = "0";
 
             //string[] fileContent = FileReader.ReadFileArray(filePath, currentDay, part);
             //List<string> fileContentList = FileReader.ReadFileList(filePath, currentDay);
@@ -23,18 +22,24 @@ namespace AdventOfCode2023
             //Console.WriteLine(fileContentList);
             switch (currentDay)
             {
-                /*case "1":
-                    if (part == "1")
+                case "1":
+                    if (part == "0")
+                    {
+                        //Day1 Part0
+                        //Console.WriteLine(Day1.PartOne(FileReader.ReadFileList(filePath, currentDay, part)));
+                        Console.WriteLine(Day2.PartTwo(FileReader.ReadFileList(filePath, currentDay, part)));
+                    }
+                    else if (part == "1")
                     {
                         //Day1 Part1
-                        Console.WriteLine(Day1.PartOne(FileReader.ReadFileArray(filePath, currentDay, part)));
+                        Console.WriteLine(Day1.PartOne(FileReader.ReadFileList(filePath, currentDay)));
                     }
                     else
                     {
                         //Day1 Part2
-                        Console.WriteLine(Day1.PartTwo(FileReader.ReadFileArray(filePath, currentDay, part)));
+                        Console.WriteLine(Day1.PartTwo(FileReader.ReadFileList(filePath, currentDay)));
                     }
-                    break;*/
+                    break;
                 case "2":
                     if (part == "0")
                     {
