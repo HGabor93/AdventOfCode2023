@@ -14,11 +14,11 @@ namespace AdventOfCode2023
         {
             string filePath = @"C:\Development\AdventOfCode2023\AdventOfCode2023\Days\Tasks";
             //System.Console.ReadKey();
-            string currentDay = "2";
+            string currentDay = "6";
             string part = "2";
 
             //string[] fileContent = FileReader.ReadFileArray(filePath, currentDay, part);
-            List<string> fileContentList = FileReader.ReadFileList(filePath, currentDay);
+            //List<string> fileContentList = FileReader.ReadFileList(filePath, currentDay);
 
             //Console.WriteLine(fileContentList);
             switch (currentDay)
@@ -51,6 +51,40 @@ namespace AdventOfCode2023
                     {
                         //Day2 Part2
                         Console.WriteLine(Day2.PartTwo(FileReader.ReadFileList(filePath, currentDay)));
+                    }
+                    break;
+                case "3":
+                    if (part == "0")
+                    {
+                        //Day3 Part0
+                        Console.WriteLine(Day3.PartOne(FileReader.ReadFileList(filePath, currentDay, part)));
+                    }
+                    else if (part == "1")
+                    {
+                        //Day3 Part1
+                        //Console.WriteLine(Day3.PartOne(FileReader.ReadFileList(filePath, currentDay)));
+                    }
+                    else
+                    {
+                        //Day3 Part2
+                        //Console.WriteLine(Day3.PartTwo(FileReader.ReadFileList(filePath, currentDay)));
+                    }
+                    break;
+                case "6":
+                    if (part == "0")
+                    {
+                        //Day2 Part0
+                        Console.WriteLine(Day6.PartOne(FileReader.ReadFileList(filePath, currentDay, part)));
+                    }
+                    else if (part == "1")
+                    {
+                        //Day2 Part1
+                        Console.WriteLine(Day6.PartOne(FileReader.ReadFileList(filePath, currentDay)));
+                    }
+                    else
+                    {
+                        //Day2 Part2
+                        Console.WriteLine(Day6.PartTwo(FileReader.ReadFileList(filePath, currentDay)));
                     }
                     break;
             }
